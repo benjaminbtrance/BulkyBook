@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using BulkyBook.Models;
 
 namespace BulkyBook.DataAccess.Data
 {
@@ -12,5 +13,7 @@ namespace BulkyBook.DataAccess.Data
             : base(options)
         {
         }
+        
+        public DbSet<Category> Categories { get; set; }
     }
 }
